@@ -1,0 +1,112 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header: full width with background */
+header {
+    width: 100%;
+    background: #222;
+    color: white;
+    padding: 20px 0; /* vertical padding */
+}
+
+/* Container inside header to position content */
+.header-container {
+    margin-left: 50px;       /* shift content right */
+    max-width: 800px;        /* optional max width */
+}
+
+/* Title with grey underline */
+.header-container h1 {
+    display: inline-block;       /* shrink to text width */
+    border-bottom: 2px solid #999; /* grey line */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Navigation centered under title */
+.header-container nav {
+    width: fit-content;
+    margin-left: 0;
+    margin-right: auto;  /* centers nav under h1 */
+}
+
+/* Nav list items */
+.header-container nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav links */
+.header-container nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-container nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content width */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 50px;
+}
+
+/* Album grid */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Album card */
+.album {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Force all titles to take equal space */
+.album h3 {
+    min-height: 60px;
+}
+
+/* Album images */
+.album img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto; /* centers image */
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
